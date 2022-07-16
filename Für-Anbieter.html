@@ -1,0 +1,881 @@
+<html lang="de"><head>
+  <link rel="SHORTCUT ICON" href="images/Favicon.jpg">
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Schnupperkurs.de | Die besten Kurse in deiner Nähe</title>
+<meta name="description" content="Finde die besten Kurse für dich und deine Liebsten und frage kostenlos einen Termin zum Schnuppern an.">
+  <meta name="google-site-verification" content="LKsVoZDg9yH9R-RsnQebxuFtA6s-OdNWJPVc4HAGMSg">
+<!-- OG Tags -->
+<meta property="og:type" content="Website">
+<meta property="og:site_name" content="Schnupperkurs.de">
+<meta property="og:description" content="Finde die besten Kurse für dich und deine Liebsten und frage kostenlos einen Termin zum Schnuppern an.">
+
+  <link href="/css/fontawesome.min.css" type="text/css" rel="stylesheet">
+  <link href="/css/owl.carousel.min.css" type="text/css" rel="stylesheet">
+<link href="/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="/css/style.css" type="text/css" rel="stylesheet">
+<script src="/js/jquery.min.js" type="text/javascript"></script>
+<script src="/js/popper.min.js" type="text/javascript"></script>
+<script src="/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/js/owl.carousel.min.js" type="text/javascript"></script>
+
+  <!-- Files to edit by external developer-->
+<link href="/css/custom.css" type="text/css" rel="stylesheet">
+<!-- Custom date-picker -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.3/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.3/dist/flatpickr.min.js"></script>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+  <body class="backend backend-dashboard">
+    <!-- Start Header -->
+    <header id="header">
+      <div class="top-bar">
+        <div class="container container_full">
+          <p class="mb-0">Spannung pur? Hier über die neusten Kurse in deiner Nähe immer zuerst erfahren</p>
+        </div>
+      </div>
+      <div class="container container_full">
+        <nav class="navbar navbar-expand-lg flex-wrap justify-content-lg-center">
+
+          <!-- LOGO -->
+          <a class="mr-0" id="logo" href="/"><img src='/img/logo-2.png'></a>
+
+          <div class="mobile-box d-flex align-items-center order-lg-1 mr-lg-4">
+            <!-- Toggler Button -->
+            <button class="navbar-toggler order-1 px-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon d-flex align-items-center justify-content-start">
+                <span class="nav-toggle-inner"></span>
+              </span>
+            </button>
+
+            <div class="content d-flex justify-content-center align-items-center order-0">
+              <div class="search-icon d-lg-none search-target">
+                <img class="w-100" src="/img/search-icon.svg" alt="Search">
+              </div>
+
+              <!-- Mobile Cart -->
+              <div class="shopping-cart">
+                <a class="nav-link" href="#"><img src="/img/shopping-cart.svg" alt="shopping-cart"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class=" navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item mr-2 mr-lg-3 d-none d-lg-block search-target">
+                <a class="nav-link" href="#"><i class="fal fa-search"></i> Kurse finden</a>
+              </li>
+              <li class="nav-item mr-2 mr-lg-3">
+                <a class="nav-link" href="#">Gutscheine</a>
+              </li>
+              <li class="nav-item mr-2 mr-lg-3">
+                <a class="nav-link" href="#">Für Gruppen</a>
+              </li>
+              <li class="nav-item mr-2 mr-lg-3">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item mr-2 mr-lg-3">
+                <a class="nav-link" href="#">Für Anbieter</a>
+              </li>
+              <li class="nav-item">
+                <!-- Accordion #1 -->
+                <div class="accordion d-lg-none" id="accordionExample">
+                  <div class="card-body p-0">
+                    <div class="card-header p-0 mb-2" id="headingOne">
+                      <div class="d-flex align-items-center justify-content-between collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <a class="nav-link mr-3">Mein Konto</a>
+                        <i class="fa fa-chevron-down"></i>
+                      </div>
+                      </div>
+                    
+                      <div id="collapseOne" class="collapse m-0" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body p-0">
+                          <ul class="list-unstyled">
+                            <li class="nav-item">
+                              <a class="nav-ink" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-ink" href="#">Link</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- my account -->
+          <li class="nav-item account d-none d-lg-block order-lg-2">
+            <div class="dropdown">
+              <div class="dropdown-content d-flex align-items-baseline justify-content-between">
+                <a class="nav-link pl-0 pr-3">Mein Konto</a>
+                <i class="fa fa-chevron-down"></i>
+              </div>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
+                <a class="dropdown-item" href="#">Link</a>
+                <a class="dropdown-item" href="#">Link</a>
+              </div>
+            </div>
+          </li>
+        </nav>
+      </div>
+      <!-- Start Search Modal -->
+    <div id="search-modal" class="hide">
+      <div class="container">
+        <form class="xxx">
+          <div class="input-group align-items-center mb-3">
+            <!-- Input search with icon -->
+            <div class="input-group mr-3 mb-0 flex-grow-1 w-auto">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><img class="w-100" src="/img/search-icon.svg"></span>
+              </div>
+              <input class="flex-grow-1 mb-0" id="my-target" type="search" name="course" placeholder="Welchen Kurs suchst du?" aria-label="search" aria-describedby="basic-addon1">
+            </div>
+            <span class="modal-cancel tiny">Abbrechen </span>
+          </div>
+          <!-- accordion -->
+
+          <!-- Accodrion #1 -->
+          <div class="accordion mb-3" id="accordionExample">
+            <div class="card-body p-0">
+              <div class="card-header p-0" id="headingTwo">
+                <div class="d-flex align-items-center justify-content-between collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                  <span class="mb-0 tiny mr-3">Alle Kategorien</span>
+                  <i class="fa fa-chevron-down"></i>
+                </div>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body p-0">
+                  <div class="row">
+                    <div class="col-6 pt-4">
+                      <h6>Sport- und Fitnesskurse</h6>
+                      <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#" class="nav-link">Yoga</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">asdasdf</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">asdasd</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">asdf</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">asdf</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link showMore">Mehr anzeigen</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-6 pt-4">
+                      <h6>Kreativkurse</h6>
+                      <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#" class="nav-link">Malen</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">asdasdf</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">asdasd</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">asdf</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">asdf</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link showMore">Mehr anzeigen</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-6 pt-4 mb-2">
+                      <h6>Gesundheitskurse</h6>
+                      <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#" class="nav-link">Meditation</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Achtsamkeit</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">asdasd</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">asdf</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">asdf</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link showMore">Mehr anzeigen</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-6 pt-4 mb-2">
+                      <h6>Sprachkurse</h6>
+                      <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#" class="nav-link">Englisch</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Italienisch</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">asdasd</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">asdf</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">asdf</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link showMore">Mehr anzeigen</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <!-- Input search with icon -->
+            <div class="input-group mb-3 flex-grow-1 w-auto">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><img class="w-100" src="/img/map-2.svg"></span>
+              </div>
+              <input class="flex-grow-1 mb-0"  type="search" name="location" placeholder="Wo suchst du einen Kurs?"aria-label="search" aria-describedby="basic-addon1">
+            </div>
+
+            <span class="tip tiny">Tipp: Gib am besten deine Adresse oder PLZ ein.</span>
+          </div>
+          <div class="buttons d-flex justify-content-center">
+            <button type="submit" class="btn px-4 px-sm-5 mx-0 mt-4 mr-3">Kurse anzeigen</button>
+            <button type="button" class="btn px-4 mx-0 mt-4 bg-white modal-cancel">Schließen</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End Search Modal -->
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Content -->
+    <div id="content" class="bg-transparent pt-0 pb-2">
+      <!-- <div class="bubble-background bubble-background-left"><svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 299.6 456.4" style="enable-background:new 0 0 299.6 456.4;" xml:space="preserve">
+  <path class="st0" d="M0.6-0.1C167.7,9.5,299.1,108,299.1,228.2S167.7,446.9,0.6,456.5L0.6-0.1z"></path>
+  </svg></div> -->
+
+      <!-- Start Hero Section -->
+      <div class="hero-section Anbieter  position-relative">
+        <div class="overlay"></div>
+        <div class="container container_full">
+          <div class="row">
+            <!-- col #1 -->
+            <div class="col-12 col-xl-8 my-0 d-flex align-items-center order-1 order-xl-0">
+              <div class="content">
+                <h1 class="mb-3">Gewinne Teilnehmer<br class="d-none d-sm-block"> für deine Kurse</h1>
+                <p class="mb-4">Unsere Nutzer wollen deine Kunden werden</p>
+                <a href="http://new.schnupperkurs.de/anmelden#registrieren">
+                  <button class="btn" type="button">Jetzt registrieren</button>
+                </a>
+              </div>
+            </div>
+            <!-- col #2 -->
+            <div class="col-12 col-xl-4  my-0 order-0 order-xl-1 mb-4 mb-xl-0 d-flex align-items-start  justify-content-lg-end">
+              <!-- Accordion #1 -->
+              <div class="accordion w-100" id="accordionExample">
+                <div class="card-body p-0">
+                  <div class="card-header p-0 mb-0 bg-transparent border-0" id="headingOne">
+                    <div class="d-flex align-items-center justify-content-between" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <h3 class="mb-0">Zur kostenlosen Registrierung</h3>
+                      <i class="fa fa-chevron-down"></i>
+                    </div>
+                    </div>
+                  
+                    <div id="collapseOne" class="collapse m-0 mt-5 show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="card-body p-0">
+                        <div class="features mb-2">
+                          <div class="row">
+                            <!-- col -->
+                            <div class="col-12 mt-0 mb-4 pr-0">
+                              <div class="feat d-flex align-items-center pr-0">
+                                <div class="icon ">
+                                  <i class="fal fa-heart"></i>
+                                </div>
+                                <p>Werde Teil unseres Partnernetzwerks und freu dich auf eine enge und faire Zusammenarbeit</p>
+                              </div>
+                            </div>
+                            <!-- col -->
+                            <div class="col-12 mt-0 mb-4 pr-0">
+                              <div class="feat d-flex align-items-center">
+                                <div class="icon ">
+                                  <i class="fal fa-user"></i>
+                                </div>
+                                <p>Stelle deine Kurse ein und fülle freie Plätze mit neuen Teilnehmern</p>
+                              </div>
+                            </div>
+                            <!-- col -->
+                            <div class="col-12 mt-0 mb-4 pr-0">
+                              <div class="feat d-flex align-items-center">
+                                <div class="icon ">
+                                  <i class="fal fa-star"></i>
+                                </div>
+                                <p>Steigere deinen Umsatz und zahle nur eine Provision, wenn wir erfolgreich sind</p>
+                              </div>
+                            </div>
+                          </div>
+                          <p class="tiny text-center mt-3">Probiere es aus. Wir freuen uns auf dich!</p>
+                          <a href="http://new.schnupperkurs.de/anmelden#registrieren">
+                            <button class="btn mt-4 px-2 px-md-4" type="button">Registrieren und Kurse einstellen</button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Hero Section -->
+
+      <div class="features my-5">
+        <div class="container container_full">
+          <h2 class="mb-2">Wir sind Deutschlands aufstrebendste Plattform für Kurse</h2>
+          <p class="tiny">Werde Teil unserer großen Community und profitiere von unserem Netzwerk</p>
+          <div class="row">
+            <!-- col -->
+            <div class="col-12 col-sm-6 col-xl-3 mb-0">
+              <div class="feat d-flex align-items-center">
+                <div class="icon">
+                  <i class="fal fa-star"></i>
+                </div>
+                <p>Sichere dir eine große Präsenz für deine Kurse - kostenlos!</p>
+              </div>
+            </div>
+            <!-- col -->
+            <div class="col-12 col-sm-6 col-xl-3 mb-0">
+              <div class="feat d-flex align-items-center">
+                <div class="icon">
+                  <i class="fal fa-lock"></i>
+                </div>
+                <p>Stelle deine Kurse ein und fülle freie Plätze mit neuen Teilnehmern</p>
+              </div>
+            </div>
+            <!-- col -->
+            <div class="col-12 col-sm-6 col-xl-3 mb-0">
+              <div class="feat d-flex align-items-center">
+                <div class="icon">
+                  <i class="fal fa-heart"></i>
+                </div>
+                <p>Erhalte von uns persönlichen Kundenservice und Beratung</p>
+              </div>
+            </div>
+            <!-- col -->
+            <div class="col-12 col-sm-6 col-xl-3">
+              <div class="feat d-flex align-items-center">
+                <div class="icon gift">
+                  <i class="fal fa-gift"></i>
+                </div>
+                <p>Steigere deinen Umsatz und zahle nur eine erfolgsbasierte Provision</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Start Testimonials -->
+      <div class="testimonials bg-offwihte">
+        <div class="container container_full">
+          <h2 class="mb-2">Das sagen unsere Kursanbieter über uns</h2>
+          <p class="tiny">Unsere Zusammenarbeit ist jederzeit eine Win-Win-Situation</p>
+          <div class="row mt-3">
+            <!-- col -->
+            <div class="col-12 col-md-6 col-xl-4 mb-0 d-flex mt-3">
+              <div class="card flex-row py-4 pl-4 pr-3">
+                <div class="card-img">
+                  <img class="w-100" src="/img/testimonial 8.png" alt="testimonial">
+                </div>
+                <div class="card-body p-0 pl-3">
+                  <div class="rate d-flex mb-2">
+                    <div class="stars mr-2">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <div class="reviews">5/5</div>
+                  </div>
+                  <p class="mb-2">„Ich habe erst kürzlich mein eigenes Studio eröffnet und wusste nicht, wie ich Kunden finde. Mit Marketing kenne ich mich nicht aus. Durch Schnupperkurs habe ich schnell Stammkunden gefunden und mein Studio wächst stetig.“</p>
+                  <div class="name">- Hülya</div>
+                </div>
+              </div>
+            </div>
+            <!-- col -->
+            <div class="col-12 col-md-6 col-xl-4 mb-0 d-flex mt-3">
+              <div class="card flex-row  py-4 pl-4 pr-3">
+                <div class="card-img">
+                  <img class="w-100" src="/img/testimonial 9.png" alt="testimonial 2">
+                </div>
+                <div class="card-body p-0 pl-3">
+                  <div class="rate d-flex mb-2">
+                    <div class="stars mr-2">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <div class="reviews">5/5</div>
+                  </div>
+                  <p class="mb-2">„Ich nutze Schnupperkurs nun jetzt schon etwas länger und kann es jedem, der Kurse anbietet ans Herz legen. Auch von meinen Kunden höre ich nur Gutes und die meisten von ihnen sind noch heute bei mir Mitglied.“</p>
+                  <div class="name">- Oliver</div>
+                </div>
+              </div>
+            </div>
+            <!-- col -->
+            <div class="col-12 col-md-6 col-xl-4 mb-0 d-flex mt-3">
+              <div class="card flex-row  py-4 pl-4 pr-3">
+                <div class="card-img">
+                  <img class="w-100" src="/img/testimonial 10.png" alt="testimonial 3">
+                </div>
+                <div class="card-body p-0 pl-3">
+                  <div class="rate d-flex mb-2">
+                    <div class="stars mr-2">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <div class="reviews">5/5</div>
+                  </div>
+                  <p class="mb-2">„Ich habe einige Probleme mit dem Internet, da ich auch nicht mehr die Jüngste bin. Schnupperkurs hilft mir mit der Zeit zu gehen und meine Kurse allen Menschen in der Nähe anzuzeigen. Bei Fragen wird mir immer schnell geholfen.“</p>
+                  <div class="name">- Dagmar</div>
+                </div>
+              </div>
+            </div>
+            <!-- col -->
+            <div class="col-12 col-md-6 col-xl-4 mb-0 d-flex mt-3">
+              <div class="card flex-row py-4 pl-4 pr-3">
+                <div class="card-img">
+                  <img class="w-100" src="/img/testimonial 11.png" alt="testimonial">
+                </div>
+                <div class="card-body p-0 pl-3">
+                  <div class="rate d-flex mb-2">
+                    <div class="stars mr-2">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <div class="reviews">5/5</div>
+                  </div>
+                  <p class="mb-2">„Schnupperkurs ist klasse. Ich habe nicht nur besser besuchte Kurse, sondern auch mehr Zeit. Die Kurse sind super schnell eingestellt und neue Anfragen kommen schnell dazu. Ich kann Schnupperkurs nur empfehlen!“</p>
+                  <div class="name">- Tina</div>
+                </div>
+              </div>
+            </div>
+            <!-- col -->
+            <div class="col-12 col-md-6 col-xl-4 mb-0 d-flex mt-3">
+              <div class="card flex-row  py-4 pl-4 pr-3">
+                <div class="card-img">
+                  <img class="w-100" src="/img/testimonial 12.png" alt="testimonial 2">
+                </div>
+                <div class="card-body p-0 pl-3">
+                  <div class="rate d-flex mb-2">
+                    <div class="stars mr-2">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <div class="reviews">5/5</div>
+                  </div>
+                  <p class="mb-2">„Schnupperkurs macht mir vieles deutlich einfacher. Besonders die einfach Abwicklung der Anfragen ist klasse. Anstatt stundenlang zu telefonieren fragen Interessenten einfach über die Seite einen Kurs an - perfekt!“</p>
+                  <div class="name">- Fabio</div>
+                </div>
+              </div>
+            </div>
+            <!-- col -->
+            <div class="col-12 col-md-6 col-xl-4 mb-0 d-flex mt-3">
+              <div class="card flex-row  py-4 pl-4 pr-3">
+                <div class="card-img">
+                  <img class="w-100" src="/img/Du.png" alt="Du">
+                </div>
+                <div class="card-body p-0 pl-3">
+                  <div class="rate d-flex mb-2">
+                    <div class="stars mr-2">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                    <div class="reviews">5/5</div>
+                  </div>
+                  <p class="mb-3">Es wird Zeit, dass auch du deine Kurse einstellst. Mach es wie alle und gewinne neue Kunden über Schnupperkurs!</p>
+                  <a href="http://new.schnupperkurs.de/anmelden#registrieren">
+                    <button type="button" class="btn py-2 px-3 w-100">Jetzt registrieren</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Testimonials -->
+
+      <!-- Start Marketing -->
+      <div class="marketing  py-5">
+        <div class="container container_full">
+          <h2 class="mb-2">Wir bewerben deine Kurse aktiv mit unserem Marketing-Budget</h2>
+          <p class="tiny">Über große Reichweitenpartner sorgen wir dafür, dass neue Teilnehmer auf deine Kurse aufmerksam werden</p>
+          <div class="row mt-3">
+            <!-- col -->
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-0 d-flex mt-3">
+              <div class="card flex-column py-4 pl-4 pr-3">
+                <div class="card-body p-0">
+                  <h3 class="facebook">Facebook</h3>
+                  <p class="mb-0">Mit Werbekampagnen und Gruppen-Beiträgen bewerben wir die Kurse auf Facebook. Zusätzlich stellen wir dich unserer Community vor.</p>
+                </div>
+              </div>
+            </div>
+            <!-- col -->
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-0 d-flex mt-3">
+              <div class="card flex-column py-4 pl-4 pr-3">
+                <div class="card-body p-0">
+                  <h3 class="instagram">Instagram</h3>
+                  <p class="mb-0">In Stories und dem Instagram-Feed bewerben wir alle Kurse mit atemberaubenden Creatives. Wir verlinken auch gerne dein Profil.</p>
+                </div>
+              </div>
+            </div>
+            <!-- col -->
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-0 d-flex mt-3">
+              <div class="card flex-column py-4 pl-4 pr-3">
+                <div class="card-body p-0">
+                  <h3 class="youtube">YouTube</h3>
+                  <p class="mb-0">Mit Bewegtbild-Anzeigen können wir alle Kurse besonders emotional und eindrucksvoll präsentieren und Teilnehmer für deine Kurse gewinnen.</p>
+                </div>
+              </div>
+            </div>
+            <!-- col -->
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-0 d-flex mt-3">
+              <div class="card flex-column py-4 pl-4 pr-3">
+                <div class="card-body p-0">
+                  <h3 class="google">
+                    <img src="/img/Google.svg" alt="Google">
+                  </h3>
+                  <p class="mb-0">Mit Anzeigen im Such- und Displaynetzwerk von Google können wir vor allem die Menschen erreichen, die auf der Suche nach Kursen sind.</p>
+                </div>
+              </div>
+            </div>
+            <!-- col -->
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-0 d-flex mt-3">
+              <div class="card flex-column py-4 pl-4 pr-3">
+                <div class="card-body p-0">
+                  <h3 class="">Print und Presse</h3>
+                  <p class="mb-0">Wir steigern unsere Bekanntheit durch Pressemitteilungen und Berichterstattungen in lokalen Medien, Magazinen und Zeitungen.</p>
+                </div>
+              </div>
+            </div>
+            <!-- col -->
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-0 d-flex mt-3">
+              <div class="card flex-column py-4 pl-4 pr-3">
+                <div class="card-body p-0">
+                  <h3 class="">Out-Of-Home</h3>
+                  <p class="mb-0">Wir bewerben unser gesamtes Kursangebot auf Plakatwänden, Bildschirmen, mit Flyern, kreativen Werbeaktionen und mehr.</p>
+                </div>
+              </div>
+            </div>
+            <!-- col -->
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-0 d-flex mt-3">
+              <div class="card flex-column py-4 pl-4 pr-3">
+                <div class="card-body p-0">
+                  <h3 class="">E-mail</h3>
+                  <p class="mb-0">Wir können E-Mail-Marketing! Per E-Mail erreichen wir unsere Community regelmäßig und stellen neue Anbieter und Kurse vor.</p>
+                </div>
+              </div>
+            </div>
+            <!-- col -->
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-0 d-flex mt-3">
+              <div class="card flex-column py-4 pl-4 pr-3">
+                <div class="card-body p-0">
+                  <h3 class="">Affiliates</h3>
+                  <p class="mb-0">Wir arbeiten mit bedeutenden Reichweitenpartnern online und offline zusammen, die alle Kurse auf unserer Plattform bewerben. </p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <!-- End Marketing -->
+
+      <!-- Start Giveaway -->
+      <div class="giveaway my-5">
+        <div class="container container_full">
+          <h2 class="mb-2">Zusätzlich sind tausende Menschen im Besitz unseres <span class="signature">KURS</span>GUTSCHEINS</h2>
+          <p class="tiny">Und wollen ihn vielleicht bei dir einlösen. Werde jetzt Gutscheinpartner.</p>
+          <div class="row justify-content-between">
+            <div class="col-12 col-sm-10 offset-sm-1 offset-md-0 col-md-4 col-lg-3 mb-0">
+              <div class="giveaway_image">
+                <img class="w-100" src="/img/KURS image.png" alt="Kurse Image">
+              </div>
+            </div>
+            <div class="col-12 col-md-8 offset-lg-0 d-flex align-items-center">
+              <div class="content">
+                <p>Ein Gutschein für tausende Kurse! Unser <span class="signature">KURS</span>GUTSCHEIN ist ein super beliebtes Geschenk und zieht tausende Teilnehmer auf unsere Kursplattform, die ihren KURSGUTSCHEIN dann für einen oder mehrere Kurse einlösen wollen. Registrier dich jetzt und werde auch du Gutscheinpartner.</p>
+                <div class="features mb-4">
+                  <div class="row">
+                    <!-- col -->
+                    <div class="col-12 col-sm-6 col-xl-4 mb-0 mt-md-4">
+                      <div class="feat d-flex align-items-center">
+                        <div class="icon ">
+                          <i class="fal fa-star"></i>
+                        </div>
+                        <p>Ein Gutschein für tausende Kurse</p>
+                      </div>
+                    </div>
+                    <!-- col -->
+                    <div class="col-12 col-sm-6 col-xl-4 mb-0 mt-3 mt-md-4">
+                      <div class="feat d-flex align-items-center">
+                        <div class="icon ">
+                          <i class="fal fa-gift"></i>
+                        </div>
+                        <p>Verschenke Zeit und gemeinsame Erlebnisse</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <!-- col -->
+                    <div class="col-12 col-sm-6 col-xl-4 mb-0 mt-3 mt-md-4">
+                      <div class="feat d-flex align-items-center">
+                        <div class="icon ">
+                          <i class="fal fa-print"></i>
+                        </div>
+                        <p>Sofort ausdruckbar und drei Jahre gültig</p>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-4 mt-3 mt-md-4">
+                      <div class="feat d-flex align-items-center">
+                        <div class="icon">
+                          <i class="fal fa-heart"></i>
+                        </div>
+                        <p>Wundervoll für alle, die dir etwas bedeuten</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="http://new.schnupperkurs.de/anmelden#registrieren">
+                  <button class="btn" type="button">Jetzt registrieren</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Giveaway -->
+
+      <!-- Start Get Customers -->
+      <div class="get-customers bg-offwhite">
+        <div class="container container_full">
+          <h2 class="mb-2">So funktioniert’s: Wie Lisa von einer Interessentin zu deiner Kundin wird</h2>
+          <p class="tiny">Sobald deine Kurse bei uns auffindbar sind, kannst du Anfragen von Interessenten erhalten</p>
+          <div class="row mt-3 mb-3 mb-md-5">
+            <!-- col -->
+            <div class="col-12 col-md-6 col-xl-4 mb-0 d-flex mt-3">
+              <div class="card flex-column">
+                <div class="card-img">
+                  <img class="w-100" src="/img/article-header-bg.png" alt="article-header-bg-1">
+                </div>
+                <div class="card-body p-0 pl-3  py-4 pl-4 pr-3">
+                  <h4>1. Lisa fragt einen Termin zur Teilnahme an deinem Kurs an</h4>
+                  <p class="">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed voluptua.</p>
+                </div>
+              </div>
+            </div>
+            <!-- col -->
+            <div class="col-12 col-md-6 col-xl-4 mb-0 d-flex mt-3">
+              <div class="card flex-column">
+                <div class="card-img">
+                  <img class="w-100" src="/img/article-header-bg-2.png" alt="article-header-bg-2">
+                </div>
+                <div class="card-body p-0 pl-3  py-4 pl-4 pr-3">
+                  <h4>2. Du erhältst ihre Anfrage per 
+                    E-Mail und nimmst Kontakt auf</h4>
+                  <p class="">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed voluptua.</p>
+                </div>
+              </div>
+            </div>
+            <!-- col -->
+            <div class="col-12 col-md-6 col-xl-4 mb-0 d-flex mt-3">
+              <div class="card flex-column">
+                <div class="card-img">
+                  <img class="w-100" src="/img/article-header-bg-3.png" alt="article-header-bg-3">
+                </div>
+                <div class="card-body p-0 pl-3  py-4 pl-4 pr-3">
+                  <h4>3. Lisa kommt zum Kurs, findet es toll und wird deine Kundin</h4>
+                  <p class="">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed voluptua.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <!-- col -->
+            <div class="col-12 col-md-6 col-xl-4 mb-0 d-flex mt-3">
+              <a href="http://new.schnupperkurs.de/anmelden#registrieren">
+                <button type="button" class="btn w-100">Gewinne jetzt neue Kunden</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Get Customers -->
+
+      <!-- Start Get Customers -->
+      <div class="get-customers">
+        <div class="container container_full">
+          <h2 class="mb-2">Unsere Zusammenarbeit basiert auf Vertrauen und deinem ehrlichen Feedback</h2>
+          <p class="tiny">Du trägst in deinem Account die entstandenen Umsätze der Vermittlungen selber ein und hast die volle Kontrolle</p>
+          <div class="row mt-3 ">
+            <!-- col -->
+            <div class="col-12 col-md-6 col-xl-4 mb-0 d-flex mt-3">
+              <div class="card flex-column">
+                <div class="card-img">
+                  <img class="w-100" src="/img/article-header-bg-4.png" alt="article-header-bg-4">
+                </div>
+                <div class="card-body p-0 pl-3  py-4 pl-4 pr-3">
+                  <h4>4. Du findest Lisa in deinem Account unter „Vermittlungen“</h4>
+                  <p class="">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed voluptua.</p>
+                </div>
+              </div>
+            </div>
+            <!-- col -->
+            <div class="col-12 col-md-6 col-xl-4 mb-0 d-flex mt-3">
+              <div class="card flex-column">
+                <div class="card-img">
+                  <img class="w-100" src="/img/article-header-bg-5.png" alt="article-header-bg-5">
+                </div>
+                <div class="card-body p-0 pl-3  py-4 pl-4 pr-3">
+                  <h4>5. Du gibst an, wie viel Umsatz durch Lisa entstanden ist</h4>
+                  <p class="">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed voluptua.</p>
+                </div>
+              </div>
+            </div>
+            <!-- col -->
+            <div class="col-12 col-md-6 col-xl-4 mb-0 d-flex mt-3">
+              <div class="card flex-column">
+                <div class="card-img">
+                  <img class="w-100" src="/img/article-header-bg-6.png" alt="article-header-bg-6">
+                </div>
+                <div class="card-body p-0 pl-3  py-4 pl-4 pr-3">
+                  <h4>6. Du gibst uns für die Vermittlung eine faire Provision</h4>
+                  <p class="">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed voluptua.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Get Customers -->
+
+      <!-- Start Contact -->
+      <div class="contact Anbieter pt-0">
+        <div class="container container_full">
+          <div class="offer mb-5">
+            <div class="row align-items-start">
+              <div class="col-12 col-lg-6 my-0">
+                <h2>Neue Kunden gewinnen - fair und ohne Risiko</h2>
+                <p class="tiny">Registriere dich jetzt und stelle deine Kurse ein</p>
+              </div>
+              <div class="col-12 col-lg-6 mb-0 mt-lg-0 d-flex align-items-center flex-wrap flex-xl-nowrap">
+                
+                  <a href="http://new.schnupperkurs.de/anmelden#registrieren">
+                    <button type="button" class="btn py-2 px-4 mr-3 mb-3 mb-xl-0">Jetzt registrieren</button>
+                  </a>
+                <p class="tiny">Oder nimm Kontakt zu uns auf per E-Mail an <a href="mailto:hallo@schnupperkurs.de">hallo@schnupperkurs.de</a>  oder telefonisch unter 
+                  0211/97631125.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Contact -->
+
+      <!-- Start Giveaway -->
+      <div class="giveaway mt-5 bg-offwhite py-5">
+        <div class="container container_full">
+          <h2 class="mb-2">Übrigens: Wir engagieren uns für Vereine und Verbände</h2>
+          <p class="tiny">Uns ist es eine Herzensangelegenheit, Vereine und Verbände in der Digitalisierung zu unterstützen</p>
+          <div class="row justify-content-between">
+            <div class="col-12 col-md-4 mb-0 pr-md-4">
+              <div class="giveaway_image">
+                <img class="w-100" src="/img/giveaway_image.png" alt="giveaway_image">
+              </div>
+            </div>
+            <div class="col-12 col-md-8 d-flex align-items-center">
+              <div class="content">
+                <div class="d-flex">
+                  <!-- <div class="giveaway_image d-md-none">
+                    <img class="w-100" src="/img/giveaway_image.png" alt="giveaway_image">
+                  </div> -->
+                  <p class="mb-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed voluptua.</p>
+                </div>
+                <a href="http://new.schnupperkurs.de/anmelden#registrieren">
+                  <button class="btn" type="button">Als Verein registrieren</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Giveaway -->
+    </div>
+    <!-- End Content -->
+
+  <!-- Start Footer -->
+  <footer id="footer">
+    <div id="copyright-footer" class="mb-5">
+      <div class="container container_full">
+        <div class="row">
+          <div class="col-xl-4 mb-5 mb-xl-0">
+            <div class="logo mb-4">
+              <img src="/img/footer-logo.png" alt="LOGO">
+            </div>
+            <p class="pr-3">Neue Kurse in deiner Nähe per E-Mail entdecken. Jetzt eintragen!</p>
+            <form class="d-flex align-items-start justify-content-start mb-0 flex-wrap">
+              <input class="mb-2 mb-sm-0 mr-2" type="email" name="Deine E-Mail-Adresse" placeholder="Deine E-Mail-Adresse">
+              <button type="submit" class="btn px-4">Absenden</button>
+            </form>
+          </div>
+
+          <div class="col-xl-8">
+            <div class="row">
+              <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+                <h4>Kontakt</h4>
+                <p class="tiny">Wir freuen uns von dir zu hören</p>
+                <ul class="nav flex-column">
+                  <li><a target="_blank" href="https://wa.me/4921197631125"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                  <li><a target="_blank" href="mailto:hallo@schnupperkurs.de"><i class="fal fa-envelope"></i> E-mail</a></li>
+                  <li><a target="_blank" href="tel:000-555-555"><i class="fal fa-mobile"></i> Telefon</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+                <h4>Folge uns</h4>
+                <p class="tiny">Sei überall dabei</p>
+                <ul class="nav flex-column">
+                  <li><a href="https://www.instagram.com/schnupperkurs.de/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                  <li><a href="https://www.facebook.com/schnupperkurs.de/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+                  <li><a target="_blank" href="https://wa.me/4921197631125"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                  <li><a href="https://www.schnupperkurs.de/blog/" target="_blank"><i class="fal fa-external-link"></i> Blog</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-6 col-lg-3 mb-4 mb-sm-0">
+                <h4>Für Anbieter</h4>
+                <p class="tiny">Neue Kunden gewinnen</p>
+                <ul class="nav flex-column">
+                  <li><a href="#" target="_blank"> Informationen</a></li>
+                  <li><a href="#" target="_blank"> Anmelden</a></li>
+                  <li><a href="#" target="_blank" >Registrieren</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-6 col-lg-3 mb-4 mb-sm-0">
+                <h4>Rechtliches</h4>
+                <p class="tiny">Auf sicheren Beinen</p>
+                <ul class="nav flex-column">
+                  <li><a href="#" target="_blank"> Nutzungsbedingungen</a></li>
+                  <li><a href="#" target="_blank"> Datenschutz</a></li>
+                  <li><a href="#" target="_blank" >AGB</a></li>
+                  <li><a href="#" target="_blank" >Impressum</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="made-with-love">
+      <div class="container container_full text-center mt-0">
+        Mit <i class="fal fa-heart"></i> gemacht in Düsseldorf&nbsp;&nbsp;|&nbsp;&nbsp;© 2020 schnupperkurs.media GmbH
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+    <script src="/js/script.js" type="text/javascript"></script>
+    <script src="/js/custom.js" type="text/javascript"></script>
+</body>
+</html>

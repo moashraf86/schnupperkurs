@@ -1,0 +1,374 @@
+<html lang="de"><head>
+  <link rel="SHORTCUT ICON" href="images/Favicon.jpg">
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Gutscheine</title>
+<meta name="description" content="Finde die besten Kurse für dich und deine Liebsten und frage kostenlos einen Termin zum Schnuppern an.">
+  <meta name="google-site-verification" content="LKsVoZDg9yH9R-RsnQebxuFtA6s-OdNWJPVc4HAGMSg">
+<!-- OG Tags -->
+<meta property="og:type" content="Website">
+<meta property="og:site_name" content="Schnupperkurs.de">
+<meta property="og:description" content="Finde die besten Kurse für dich und deine Liebsten und frage kostenlos einen Termin zum Schnuppern an.">
+
+  <link href="/css/fontawesome.min.css" type="text/css" rel="stylesheet">
+<link href="/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="/css/style.css" type="text/css" rel="stylesheet">
+  <script src="/js/jquery.min.js" type="text/javascript"></script>
+  <script src="/js/popper.min.js" type="text/javascript"></script>
+  <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+
+  <!-- Files to edit by external developer-->
+<link href="/css/custom.css" type="text/css" rel="stylesheet">
+<!-- Custom date-picker -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.3/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.3/dist/flatpickr.min.js"></script>
+<script src="https://npmcdn.com/flatpickr/dist/l10n/de.js"></script>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+  <body class="backend backend-dashboard">
+    <!-- Start Header -->
+    <header id="header">
+      <div class="container container_full">
+        <nav class="navbar navbar-expand-lg flex-wrap justify-content-lg-center">
+
+          <!-- LOGO -->
+          <a class="mr-0" id="logo" href="/"><img src='/img/logo-2.png'></a>
+
+          <div class="mobile-box d-flex align-items-center order-lg-1 mr-lg-4">
+            <!-- Toggler Button -->
+            <button class="navbar-toggler order-1 px-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon d-flex align-items-center justify-content-start">
+                <span class="nav-toggle-inner"></span>
+              </span>
+            </button>
+
+            <div class="content d-flex justify-content-center align-items-center order-0">
+              <div class="search-icon d-lg-none search-target">
+                <img class="w-100" src="/img/search-icon.svg" alt="Search">
+              </div>
+
+              <!-- Mobile Cart -->
+              <div class="shopping-cart">
+                <a class="nav-link" href="#"><img src="/img/shopping-cart.svg" alt="shopping-cart"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class=" navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item mr-2 mr-lg-3 d-none d-lg-block search-target">
+                <a class="nav-link" href="#"><i class="fal fa-search"></i> Kurse finden</a>
+              </li>
+              <li class="nav-item mr-2 mr-lg-3">
+                <a class="nav-link" href="#">Gutscheine</a>
+              </li>
+              <li class="nav-item mr-2 mr-lg-3">
+                <a class="nav-link" href="#">Für Gruppen</a>
+              </li>
+              <li class="nav-item mr-2 mr-lg-3">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item mr-2 mr-lg-3">
+                <a class="nav-link" href="#">Für Anbieter</a>
+              </li>
+              <li class="nav-item">
+                <!-- Accordion #1 -->
+                <div class="accordion d-lg-none" id="accordionExample">
+                  <div class="card-body p-0">
+                    <div class="card-header p-0 mb-2" id="headingOne">
+                      <div class="d-flex align-items-center justify-content-between collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <a class="nav-link mr-3">Mein Konto</a>
+                        <i class="fa fa-chevron-down"></i>
+                      </div>
+                      </div>
+                    
+                      <div id="collapseOne" class="collapse m-0" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body p-0">
+                          <ul class="list-unstyled">
+                            <li class="nav-item">
+                              <a class="nav-ink" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-ink" href="#">Link</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- my account -->
+          <li class="nav-item account d-none d-lg-block order-lg-2">
+            <div class="dropdown">
+              <div class="dropdown-content d-flex align-items-baseline justify-content-between">
+                <a class="nav-link pl-0 pr-3">Mein Konto</a>
+                <i class="fa fa-chevron-down"></i>
+              </div>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" >
+                <a class="dropdown-item" href="#">Link</a>
+                <a class="dropdown-item" href="#">Link</a>
+              </div>
+            </div>
+          </li>
+        </nav>
+      </div>
+      <!-- Start Search Modal -->
+    <div id="search-modal" class="hide">
+      <div class="container">
+        <form class="xxx">
+          <div class="input-group align-items-center mb-3">
+            <!-- Input search with icon -->
+            <div class="input-group mr-3 mb-0 flex-grow-1 w-auto">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><img class="w-100" src="/img/search-icon.svg"></span>
+              </div>
+              <input class="flex-grow-1 mb-0" id="my-target" type="search" name="course" placeholder="Welchen Kurs suchst du?" aria-label="search" aria-describedby="basic-addon1">
+            </div>
+            <span class="modal-cancel tiny">Abbrechen </span>
+          </div>
+          <!-- accordion -->
+
+          <!-- Accodrion #1 -->
+          <div class="accordion mb-3" id="accordionExample">
+            <div class="card-body p-0">
+              <div class="card-header p-0" id="headingTwo">
+                <div class="d-flex align-items-center justify-content-between collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                  <span class="mb-0 tiny mr-3">Alle Kategorien</span>
+                  <i class="fa fa-chevron-down"></i>
+                </div>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body p-0">
+                  <div class="row">
+                    <div class="col-6 pt-4">
+                      <h6>Sport- und Fitnesskurse</h6>
+                      <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#" class="nav-link">Yoga</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">asdasdf</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">asdasd</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">asdf</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">asdf</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link showMore">Mehr anzeigen</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-6 pt-4">
+                      <h6>Kreativkurse</h6>
+                      <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#" class="nav-link">Malen</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">asdasdf</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">asdasd</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">asdf</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">asdf</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link showMore">Mehr anzeigen</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-6 pt-4 mb-2">
+                      <h6>Gesundheitskurse</h6>
+                      <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#" class="nav-link">Meditation</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Achtsamkeit</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">asdasd</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">asdf</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">asdf</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link showMore">Mehr anzeigen</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-6 pt-4 mb-2">
+                      <h6>Sprachkurse</h6>
+                      <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#" class="nav-link">Englisch</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Italienisch</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">asdasd</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">asdf</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">asdf</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link showMore">Mehr anzeigen</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <!-- Input search with icon -->
+            <div class="input-group mb-3 flex-grow-1 w-auto">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><img class="w-100" src="/img/map-2.svg"></span>
+              </div>
+              <input class="flex-grow-1 mb-0"  type="search" name="location" placeholder="Wo suchst du einen Kurs?"aria-label="search" aria-describedby="basic-addon1">
+            </div>
+
+            <span class="tip tiny">Tipp: Gib am besten deine Adresse oder PLZ ein.</span>
+          </div>
+          <div class="buttons d-flex justify-content-center">
+            <button type="submit" class="btn px-4 px-sm-5 mx-0 mt-4 mr-3">Kurse anzeigen</button>
+            <button type="button" class="btn px-4 mx-0 mt-4 bg-white modal-cancel">Schließen</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End Search Modal -->
+    </header>
+  <!-- End Header -->
+
+  <!-- Start Content -->
+  <div id="content" class="adjustable-content">
+    <div class="container container_full">
+      <div class="content-header d-flex justify-content-between align-items-center mb-2">
+        <h2>Sehr gut, Timo! Füge jetzt vor dem letzten Schritt noch folgende Infos hinzu</h2>
+      </div>
+      <!-- Grid container -->
+      <div class="profile step-two flex-wrap">
+        <div class="row">
+          <!-- col #1 -->
+        <div class="col-12 col-md-6 col-xl-4 mb-0 mt-4 ref">
+          <div class="inline-grid target-destination">
+            <!-- Grid Box -->
+            <div class="grid-box body">
+              <h4>Deine Telefonnummer</h4>
+              <p class="mb-3">Deine Telefonnummer ist super wichtig, damit der Anbieter dich u.a. bei Ausfällen oder spontanen Änderungen schnell erreichen kann.</p>
+              <input class="max-w" type="text" placeholder="Gib am besten deine Handynummer an">
+            </div>
+          </div>
+        </div>
+
+        <!-- col #2 -->
+        <div class="col-12 col-md-6 col-xl-4 mt-0 mt-md-4 mb-0">
+          <div class="inline-grid">
+            <!-- Grid Box -->
+            <div class="grid-box body">
+              <h4>Dein Geburtsdatum</h4>
+              <p class="mb-3">Für einige Kurse bestehen Altersbeschränkungen. Außerdem möchten wir dir gerne zum Geburtstag gratulieren.</p>
+              <div class="input-group pb-0 flex-row">
+                <input class="flatpickr flatpickr-input" type="text" data-id="datetime" placeholder="TT/MM/JJJJ">
+              </div>
+              <p class="mb-3">Geburtsdatum des Kindes (wenn Kursteilnehmer)</p>
+              <div class="input-group pb-0 flex-row">
+                <input class="flatpickr flatpickr-input" type="text" data-id="datetime" placeholder="TT/MM/JJJJ">
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <!-- col #3 -->
+        <div class="col-12 col-md-6 col-xl-4 mt-0 mt-md-4">
+          <div class="inline-grid base-destination">
+            <!-- Grid Box -->
+            <div class="grid-box body target">
+              <h4>Benachrichtigungen</h4>
+              <div class="input-group">
+                <!-- checkbox -->
+                <div class="box">
+                  <label class="checkbox align-items-start">
+                    <input type="checkbox" />
+                    <span>Wenn es neue Informationen bzgl. einer meiner gewählten Kurse gibt, möchte ich eine Benachrichtigung per E-Mail erhalten.</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- Grid Box -->
+            <div class="grid-box body target">
+              <h4>Bezahlung</h4>
+              <p class="mb-3">Bist du im Besitz eines <span class="signature">KURS</span>GUTSCHEINS, den du für diesen Kurs einlösen möchtest?</p>
+              <div class="input-group radio-buttons d-flex flex-row">
+                <div class="radioBox flex-grow-1">
+                  <input type="radio" id="Nein" name="radio-group" checked class="d-none">
+                  <label for="Nein">Nein</label>
+                </div>
+                <div class="radioBox flex-grow-1">
+                  <input type="radio" id="Ja" name="radio-group" checked class="d-none">
+                  <label for="Ja">Ja</label>
+                </div>
+              </div>
+            </div>
+            <!-- Grid Box -->
+            <div class="grid-box body mobile-fixed target">
+              <div class="row align-items-center">
+                <div class="col-5 col-md-12 col-xl-5 my-0 mb-md-3 mb-xl-0">
+                  <p class="price">0,00 €</p>
+                  <span class="tiny price-title">Preis zur Teilnahme</span>
+                </div>
+                <div class="col-7 col-md-12 col-xl-7 my-0 pl-xl-0">
+                  <button type="submit" class="btn p-3">Speichern und zum
+                    letzten Schritt</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <!-- Grid container -->
+    </div>
+  </div>
+  <!-- Start Content -->
+
+
+  <!-- Start Footer -->
+  <footer id="footer">
+    <div id="copyright-footer">
+      <div class="container container_full">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <h3>Kontakt</h3>
+            <ul class="nav flex-column">
+              <li><a target="_blank" href="https://wa.me/4921197631125"><i class="fab fa-whatsapp"></i> Schreib uns bei WhatsApp</a></li>
+              <li><a target="_blank" href="https://m.me/schnupperkurs.de"><i class="fab fa-facebook-messenger"></i> Schreib uns bei Facebook</a></li>
+              <li><a target="_blank" href="mailto:hallo@schnupperkurs.de"><i class="fas fa-envelope"></i> hallo@schnupperkurs.de</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h3>Für Anbieter</h3>
+            <ul class="nav flex-column">
+              <li><a href="/fuer-anbieter" target="_blank">Infos</a></li>
+              <li><a href="/registrieren" target="_blank">Registrieren</a></li>
+              <li><a href="/fuer-anbieter#kurse-vermarkten" target="_blank">Kurse bewerben</a></li>
+              <li><a href="/fuer-anbieter#engagement" target="_blank">Engagement</a></li>
+              <li><a href="/fuer-anbieter#agentur" target="_blank">Agentur</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h3>Folge uns</h3>
+            <ul class="nav flex-column">
+              <li><a href="https://www.facebook.com/schnupperkurs.de/" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+              <li><a href="https://www.instagram.com/schnupperkurs.de/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+              <li><a href="https://wa.me/4921197631125" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+              <li><a href="https://www.schnupperkurs.de/blog/" target="_blank"><i class="fal fa-newspaper"></i> Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h3>Rechtliches</h3>
+            <ul class="nav flex-column">
+              <li><a href="/nutzungsbedingungen">Nutzungsbedingungen</a></li>
+              <li><a href="/datenschutz">Datenschutz</a></li>
+              <li><a href="/agb">AGB</a></li>
+              <li><a href="/impressum">Impressum</a></li>				
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="made-with-love">
+      <div class="container container_full">
+        Mit <i class="fas fa-heart"></i> gemacht in Düsseldorf&nbsp;&nbsp;|&nbsp;&nbsp;© 2020 schnupperkurs.media GmbH
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+    <script src="/js/script.js" type="text/javascript"></script>
+    <script src="/js/custom.js" type="text/javascript"></script>
+</body>
+</html>

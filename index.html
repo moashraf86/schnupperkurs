@@ -1,0 +1,554 @@
+<html lang="de"><head>
+  	<link rel="SHORTCUT ICON" href="images/Favicon.jpg">
+    <meta charset="utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Schnupperkurs.de | Die besten Kurse in deiner Nähe</title>
+	<meta name="description" content="Finde die besten Kurse für dich und deine Liebsten und frage kostenlos einen Termin zum Schnuppern an.">
+    <meta name="google-site-verification" content="LKsVoZDg9yH9R-RsnQebxuFtA6s-OdNWJPVc4HAGMSg">
+	<!-- OG Tags -->
+	<meta property="og:type" content="Website">
+	<meta property="og:site_name" content="Schnupperkurs.de">
+	<meta property="og:description" content="Finde die besten Kurse für dich und deine Liebsten und frage kostenlos einen Termin zum Schnuppern an.">
+	
+    <link href="/css/fontawesome.min.css" type="text/css" rel="stylesheet">
+	<link href="/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+	<link href="/css/style.css" type="text/css" rel="stylesheet">
+    <script src="/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/js/popper.min.js" type="text/javascript"></script>
+    <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+	
+    <!-- Files to edit by external developer-->
+	<link href="/css/custom.css" type="text/css" rel="stylesheet">
+	<!-- Custom date-picker -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.3/dist/flatpickr.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.3/dist/flatpickr.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+  	<body class="backend backend-dashboard">
+		<header id="header">
+			<div class="container container_full">
+				<nav class="navbar navbar-expand-lg">
+					  <a id="logo" href="/"><img src='/img/logo.svg'></a>
+					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"><i class="fal fa-bars"></i></span>
+					  </button>
+
+					  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<form class="form-inline my-2 my-lg-0">
+						  <input class="form-control mr-sm-2" type="text" placeholder="Suche" aria-label="Search">
+						  <button class="btn btn-transparent my-sm-0" type="submit"><i class="fal fa-search"></i></button>
+						</form>
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Kurse finden</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Gutscheine</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Für Gruppen</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Blog</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Mein Konto</a>
+							</li>
+						</ul>
+					  </div>
+				</nav>
+			</div>
+		</header>
+		<div id="content">
+			<!-- <div class="bubble-background bubble-background-left"><svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 299.6 456.4" style="enable-background:new 0 0 299.6 456.4;" xml:space="preserve">
+	<path class="st0" d="M0.6-0.1C167.7,9.5,299.1,108,299.1,228.2S167.7,446.9,0.6,456.5L0.6-0.1z"></path>
+	</svg></div> -->
+			<div class="container container_full">
+				<div class="content-header mb-2">
+					<nav class="navbar navbar-expand-lg p-0">
+						<h1>Vermittlungen</h1>
+						<span class="info">6 gefunden <span>Hilfe</span></span>
+					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#filter" aria-controls="filter" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"><i class="fas fa-filter"></i></span>
+					  </button>
+
+					  <div class="collapse navbar-collapse" id="filter">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="#"><i class="fas fa-filter"></i> 5 Filter aktiv</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#"><i class="fas fa-sort"></i> Neueste</a>
+							</li>
+						</ul>
+						<form class="form-inline my-2 my-lg-0">
+						  <input class="form-control mr-sm-2" type="text" placeholder="Suche" aria-label="Search">
+						  <button class="btn btn-transparent my-sm-0" type="submit"><i class="fal fa-search"></i></button>
+						</form>
+					  </div>
+					</nav>
+				</div>
+				<div class="row">
+					<!-- Card 1--> 
+					<div class="col-xl-3 col-lg-4 col-md-6">
+						<a data-modal="#vermittlung-319" href="#vermittlung-319" class="card">
+							<div class="signal-leuchte">
+								<div class="signal-leuchte-single signal-leuchte-single-erschienen signal-leuchte-positive" data-toggle="tooltip" data-placement="right" data-content="Ist erschienen"></div>
+								<div class="signal-leuchte-single signal-leuchte-single-umsatz signal-leuchte-positive"></div>
+							</div>
+							<div class="card-header">
+								<h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Andreas Göringer</h5>
+								<h6 class="card-subtitle mb-2 text-muted">20.03.2020 | 16:02 Uhr</h6>
+							</div>
+							<div class="card-body">
+								<div class="review">
+									<div class="img">
+										<img class="w-100 h-100" src="/img/Andreas 116x76.png" alt="Andreas">
+									</div>
+									<div class="details">29.03.2020  17:30 - 18:45 Uhr
+										CrossFit in Hamburg</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<div class="card-attributes">
+									<div class="card-attribute">
+										<div class="card-attribute-question">Erschienen?</div>
+										<div class="card-attribute-answer card-attribute-answer-positive">Ja</div>
+									</div>
+									<div class="card-attribute">
+										<div class="card-attribute-question">Ist weiterer Umsatz entstanden?</div>
+										<div class="card-attribute-answer card-attribute-answer-positive">Ja</div>
+									</div>
+									<div class="card-attribute">
+										<div class="card-attribute-question">Welcher Art?</div>
+										<div class="card-attribute-answer card-attribute-answer-positive">Mitgliedschaft</div>
+									</div>
+									<div class="card-attribute">
+										<div class="card-attribute-question">In welcher Höhe?</div>
+										<div class="card-attribute-answer card-attribute-answer-positive">800 €</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<p class="card-text">Kunde offen</p>
+							</div>
+						</a>
+					</div>
+					<!-- Card 2-->
+					<div class="col-xl-3 col-lg-4 col-md-6">
+						<a data-modal="#vermittlung-319" href="#vermittlung-319" class="card">
+							<div class="signal-leuchte">
+								<div class="signal-leuchte-single signal-leuchte-single-erschienen signal-leuchte-positive" data-toggle="tooltip" data-placement="right" data-content="Ist erschienen"></div>
+								<div class="signal-leuchte-single signal-leuchte-single-umsatz signal-leuchte-positive"></div>
+							</div>
+							<div class="card-header">
+								<h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Lena Meyer Sophie Peter…</h5>
+								<h6 class="card-subtitle mb-2 text-muted">16.03.2020 | 21:54 Uhr</h6>
+							</div>
+							<div class="card-body">
+								<div class="review">
+									<div class="img">
+										<img class="w-100 h-100" src="/img/Lena 116x76.png" alt="Lena">
+									</div>
+									<div class="details">19.03.2020  17:30 - 18:45 Uhr
+										Yogafit für Einsteiger und Fortg…</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<div class="card-attributes">
+									<div class="card-attribute">
+										<div class="card-attribute-question">Erschienen?</div>
+										<div class="card-attribute-answer card-attribute-answer-positive">Ja</div>
+									</div>
+									<div class="card-attribute">
+										<div class="card-attribute-question">Ist weiterer Umsatz entstanden?</div>
+										<div class="card-attribute-answer card-attribute-answer-positive">Ja</div>
+									</div>
+									<div class="card-attribute">
+										<div class="card-attribute-question">Welcher Art?</div>
+										<div class="card-attribute-answer card-attribute-answer-positive">Mitgliedschaft</div>
+									</div>
+									<div class="card-attribute">
+										<div class="card-attribute-question">In welcher Höhe?</div>
+										<div class="card-attribute-answer card-attribute-answer-positive">100 €</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<p class="card-text">Kunde offen</p>
+							</div>
+						</a>
+					</div>
+					<!-- Card 3-->
+					<div class="col-xl-3 col-lg-4 col-md-6">
+						<a data-modal="#vermittlung-319" href="#vermittlung-319" class="card">
+							<div class="signal-leuchte">
+								<div class="signal-leuchte-single signal-leuchte-single-erschienen signal-leuchte-positive" data-toggle="tooltip" data-placement="right" data-content="Ist erschienen"></div>
+								<div class="signal-leuchte-single signal-leuchte-single-umsatz signal-leuchte-negative"></div>
+							</div>
+							<div class="card-header">
+								<h5 class="card-title">Kai Koslowsky</h5>
+								<h6 class="card-subtitle mb-2 text-muted">12.03.2020 | 00:22 Uhr</h6>
+							</div>
+							<div class="card-body">
+								<div class="review">
+									<div class="img">
+										<img class="w-100 h-100" src="/img/Kai 116x76.png" alt="Kai">
+									</div>
+									<div class="details">14.03.2020  15:30 - 16:30 Uhr
+										Krafttraining für SportlerInnen</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<div class="card-attributes">
+									<div class="card-attribute">
+										<div class="card-attribute-question">Erschienen?</div>
+										<div class="card-attribute-answer card-attribute-answer-positive">Ja</div>
+									</div>
+									<div class="card-attribute">
+										<div class="card-attribute-question">Ist weiterer Umsatz entstanden?</div>
+										<div class="card-attribute-answer card-attribute-answer-negative">Nein</div>
+									</div>
+									<div class="card-attribute">
+										<div class="card-attribute-question">Welcher Art?</div>
+										<div class="card-attribute-answer card-attribute-answer-negative">---</div>
+									</div>
+									<div class="card-attribute">
+										<div class="card-attribute-question">In welcher Höhe?</div>
+										<div class="card-attribute-answer card-attribute-answer-negative">0 €</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<p class="card-text">Kunde offen</p>
+							</div>
+						</a>
+					</div>
+					<!-- Card 4-->
+					<div class="col-xl-3 col-lg-4 col-md-6">
+						<a data-modal="#vermittlung-319" href="#vermittlung-319" class="card">
+							<div class="signal-leuchte">
+								<div class="signal-leuchte-single signal-leuchte-single-erschienen signal-leuchte-negative" data-toggle="tooltip" data-placement="right" data-content="Ist erschienen" data-toggle="tooltip" data-placement="right" data-content="Ist erschienen"></div>
+								<div class="signal-leuchte-single signal-leuchte-single-umsatz signal-leuchte-negative"></div>
+							</div>
+							<div class="card-header">
+								<h5 class="card-title">Tabea Mach</h5>
+								<h6 class="card-subtitle mb-2 text-muted">15.02.2020 | 19:24 Uhr</h6>
+							</div>
+							<div class="card-body">
+								<div class="review">
+									<div class="img">
+										<img class="w-100 h-100" src="/img/Tabea 116x76.png" alt="Tabea">
+									</div>
+									<div class="details">17.02.2020  19:30 - 20:15 Uhr
+										Ashtanga Yoga</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<div class="card-attributes">
+									<div class="card-attribute">
+										<div class="card-attribute-question">Erschienen?</div>
+										<div class="card-attribute-answer card-attribute-answer-negative">Nein</div>
+									</div>
+									<div class="card-attribute">
+										<div class="card-attribute-question">Ist weiterer Umsatz entstanden?</div>
+										<div class="card-attribute-answer card-attribute-answer-negative">Nein</div>
+									</div>
+									<div class="card-attribute">
+										<div class="card-attribute-question">Welcher Art?</div>
+										<div class="card-attribute-answer card-attribute-answer-negative">---</div>
+									</div>
+									<div class="card-attribute">
+										<div class="card-attribute-question">In welcher Höhe?</div>
+										<div class="card-attribute-answer card-attribute-answer-negative">0 €</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<p class="card-text">Kunde offen</p>
+							</div>
+						</a>
+					</div>
+					<!-- Card 5-->
+					<div class="col-xl-3 col-lg-4 col-md-6">
+						<a data-modal="#vermittlung-319" href="#vermittlung-319" class="card">
+							<div class="signal-leuchte">
+								<div class="signal-leuchte-single signal-leuchte-single-erschienen signal-leuchte-positive" data-toggle="tooltip" data-placement="right" data-content="Ist erschienen"></div>
+								<div class="signal-leuchte-single signal-leuchte-single-umsatz signal-leuchte-negative"></div>
+							</div>
+							<div class="card-header">
+								<h5 class="card-title">Timo Büssemaker</h5>
+								<h6 class="card-subtitle mb-2 text-muted">01.02.2020 | 06:31 Uhr</h6>
+							</div>
+							<div class="card-body">
+								<div class="review">
+									<div class="img">
+										<img class="w-100 h-100" src="/img/Timo 116x76.png" alt="Timo">
+									</div>
+									<div class="details">05.02.2020  17:30 - 18:45 Uhr
+										Zumba Power</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<div class="card-attributes">
+									<div class="card-attribute">
+										<div class="card-attribute-question">Erschienen?</div>
+										<div class="card-attribute-answer card-attribute-answer-positive">Ja</div>
+									</div>
+									<div class="card-attribute">
+										<div class="card-attribute-question">Ist weiterer Umsatz entstanden?</div>
+										<div class="card-attribute-answer card-attribute-answer-positive">Ja</div>
+									</div>
+									<div class="card-attribute">
+										<div class="card-attribute-question">Welcher Art?</div>
+										<div class="card-attribute-answer card-attribute-answer-positive">Mitgliedschaft</div>
+									</div>
+									<div class="card-attribute">
+										<div class="card-attribute-question">In welcher Höhe?</div>
+										<div class="card-attribute-answer card-attribute-answer-positive">800 €</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<p class="card-text">Kunde offen</p>
+							</div>
+						</a>
+					</div>
+					<!-- Card 6-->
+					<div class="col-xl-3 col-lg-4 col-md-6">
+						<a data-modal="#vermittlung-319" href="#vermittlung-319" class="card">
+							<div class="signal-leuchte">
+								<div class="signal-leuchte-single signal-leuchte-single-erschienen signal-leuchte-positive" data-toggle="tooltip" data-placement="right" data-content="Ist erschienen"></div>
+								<div class="signal-leuchte-single signal-leuchte-single-umsatz signal-leuchte-positive"></div>
+							</div>
+							<div class="card-header">
+								<h5 class="card-title">Diandra Leminski</h5>
+								<h6 class="card-subtitle mb-2 text-muted">30.01.2020 | 18:30 Uhr</h6>
+							</div>
+							<div class="card-body">
+								<div class="review">
+									<div class="img">
+										<img class="w-100 h-100" src="/img/Diandra 116x76.png" alt="Diandra">
+									</div>
+									<div class="details">01.02.2020  19:00 - 19:45 Uhr
+										Yogilates für Frauen</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<div class="card-attributes">
+									<div class="card-attribute">
+										<div class="card-attribute-question">Erschienen?</div>
+										<div class="card-attribute-answer card-attribute-answer-positive">Ja</div>
+									</div>
+									<div class="card-attribute">
+										<div class="card-attribute-question">Ist weiterer Umsatz entstanden?</div>
+										<div class="card-attribute-answer card-attribute-answer-positive">Ja</div>
+									</div>
+									<div class="card-attribute">
+										<div class="card-attribute-question">Welcher Art?</div>
+										<div class="card-attribute-answer card-attribute-answer-positive">Mitgliedschaft</div>
+									</div>
+									<div class="card-attribute">
+										<div class="card-attribute-question">In welcher Höhe?</div>
+										<div class="card-attribute-answer card-attribute-answer-positive">240 €</div>
+									</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<p class="card-text">Kunde offen</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal-window-area">
+			<div id="vermittlung-319" class="modal-window modal-side-window">
+				<div class="modal-side-window-box" id="overlay">
+					<div class="modal-side-window-inner">
+						<div class="modal-side-window-header">
+							<h3>Lena Meyer Sophie Petersson</h3>
+							<button class="close-modal-window">
+								<div class="bar"></div>
+								<div class="bar"></div>
+							</button>
+						</div>
+						<div class="modal-side-window-content">
+							<div class="card-body divider py-0">
+								<h6 class="card-subtitle">Vermittlung vom 16.03.2020 21:54 Uhr</h6>
+							</div>
+							<div class="card-body divider">
+								<div class="review">
+									<div class="img">
+										<img class="w-100 h-100" src="/img/Lena 148x100.png" alt="Lena">
+									</div>
+									<div class="details">
+										<h4 class="title">Yogafit für Einsteiger und Fortgeschrittene (La…</h4>
+										<div class="subtitle">
+											<span class="date">Montag, 19.03.2020  17:30 - 18:45 Uhr </span>
+											<span class="location">
+												<i class="fa fa-map-marker-alt"></i>
+												Studio Hamburg a…
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card-body divider py-0">
+								<div class="card-subtitle email">
+									<i class="fa fa-envelope mr-2"></i>
+									lenameyersophie@gmail.com
+								</div>
+							</div>
+
+							<div class="card-body divider py-0">
+								<div class="card-subtitle phone">
+									<span class="num mr-3"><i class="fa fa-mobile-alt mr-3"></i>0163/5877365</span>
+									<span class="whatsapp">
+										<img src="/img/whatsapp.svg" alt="whatsapp">
+										WhatsApp schreiben</span>
+								</div>
+							</div>
+
+							<div class="card-body divider">
+								<div class="card-attribute d-block">
+									<div class="card-attribute-question">Erschienen?</div>
+									<div class="card-attribute-answer">
+										<span>Für diesen oder einen anderen Anlass bis zwei</span>
+										<span>Monate nach angefragtem Termin (19.05.2020)</span>
+									</div>
+								</div>
+								<div class="btn-group-toggle">
+									<div class="btn-toggle">
+										<span class="circle"></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="card-body">
+								<div class="card-attribute">
+									<div class="card-attribute-question mb-0">Ist weiterer Umsatz entstanden?</div>
+									<div class="card-attribute-answer signature">Hilfe</div>
+								</div>
+								<div class="btn-group-toggle">
+									<div class="btn-toggle">
+										<span class="circle"></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="card-body pt-3 pb-0">
+								<div class="card-subtitle py-0 pb-1">Position 1 - voreingestellt  <span class="signature">Info</span></div>
+								<div class="card-box">
+									<!-- Group 1 -->
+									<div class="input-group">
+										<label for="1">Art des Umsatzes</label>
+										<select name="Art des Umsatzes" id="1">
+											<option value="1">Mitgliedschaft</option>
+											<option value="2">option 2</option>
+											<option value="3">option 3</option>
+										</select>
+										<i class="fa fa-chevron-down"></i>
+									</div>
+
+									<!-- Group 2 -->
+									<div class="input-group pb-0">
+										<label for="2">Zeitraum</label>
+										<div class="date-group d-flex justify-content-between">
+											<input class="flatpickr flatpickr-input mr-2" type="text" data-id="datetime" placeholder="mm/dd/yyy">
+											<input class="flatpickr flatpickr-input" type="text" data-id="datetime" placeholder="mm/dd/yyy">
+										</div>
+									</div>
+
+									<!-- Group 3 -->
+									<div class="input-group flex-nowrap">
+										<label for="">Brutto-Umsatz im Zeitraum</label>
+										<div class="input-group sub-group justify-content-end p-0 flex-nowrap">
+											<input class="mb-0" type="number" placeholder="760.00">
+											<div class="input-group-prepend">
+												<span class="input-group-text" id="basic-addon1">€</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-subtitle d-flex justify-content-between py-3">
+									<span><a href="#">+ Position hinzufügen</a></span>
+									<span><a href="#">Kunde schließen</a></span>
+								</div>
+								<button class="btn" type="submit">Speichern</button>
+								<p class="important-note my-3">
+									Wichtig: Wir werden Lena automatisch kontaktieren und uns Feedback zu den Angaben einholen. Sollten wir für dich relevantes Feedback erhalten, leiten wir es dir natürlich sofort weiter.
+								</p>
+							</div>
+						</div>
+						<div class="modal-side-window-footer">
+							
+						</div>
+					</div>
+				</div>
+				<div class="overlay"></div>
+			</div>
+		</div>
+		<footer id="footer">
+			<div id="copyright-footer">
+				<div class="container container_full">
+					<div class="row">
+						<div class="col-lg-3 col-sm-6">
+							<h3>Kontakt</h3>
+							<ul class="nav flex-column">
+								<li><a target="_blank" href="https://wa.me/4921197631125"><i class="fab fa-whatsapp"></i> Schreib uns bei WhatsApp</a></li>
+								<li><a target="_blank" href="https://m.me/schnupperkurs.de"><i class="fab fa-facebook-messenger"></i> Schreib uns bei Facebook</a></li>
+								<li><a target="_blank" href="mailto:hallo@schnupperkurs.de"><i class="fas fa-envelope"></i> hallo@schnupperkurs.de</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<h3>Für Anbieter</h3>
+							<ul class="nav flex-column">
+								<li><a href="/fuer-anbieter" target="_blank">Infos</a></li>
+								<li><a href="/registrieren" target="_blank">Registrieren</a></li>
+								<li><a href="/fuer-anbieter#kurse-vermarkten" target="_blank">Kurse bewerben</a></li>
+								<li><a href="/fuer-anbieter#engagement" target="_blank">Engagement</a></li>
+								<li><a href="/fuer-anbieter#agentur" target="_blank">Agentur</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<h3>Folge uns</h3>
+							<ul class="nav flex-column">
+								<li><a href="https://www.facebook.com/schnupperkurs.de/" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+								<li><a href="https://www.instagram.com/schnupperkurs.de/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+								<li><a href="https://wa.me/4921197631125" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+								<li><a href="https://www.schnupperkurs.de/blog/" target="_blank"><i class="fal fa-newspaper"></i> Blog</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<h3>Rechtliches</h3>
+							<ul class="nav flex-column">
+								<li><a href="/nutzungsbedingungen">Nutzungsbedingungen</a></li>
+								<li><a href="/datenschutz">Datenschutz</a></li>
+								<li><a href="/agb">AGB</a></li>
+								<li><a href="/impressum">Impressum</a></li>				
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="made-with-love">
+				<div class="container container_full">
+					Mit <i class="fas fa-heart"></i> gemacht in Düsseldorf&nbsp;&nbsp;|&nbsp;&nbsp;© 2020 schnupperkurs.media GmbH
+				</div>
+			</div>
+		</footer>
+		
+			<script src="/js/script.js" type="text/javascript"></script>
+			<script src="/js/custom.js" type="text/javascript"></script>
+	</body>
+</html>

@@ -1,0 +1,262 @@
+<html lang="de"><head>
+  <link rel="SHORTCUT ICON" href="images/Favicon.jpg">
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Abrechnung</title>
+<meta name="description" content="Finde die besten Kurse für dich und deine Liebsten und frage kostenlos einen Termin zum Schnuppern an.">
+  <meta name="google-site-verification" content="LKsVoZDg9yH9R-RsnQebxuFtA6s-OdNWJPVc4HAGMSg">
+<!-- OG Tags -->
+<meta property="og:type" content="Website">
+<meta property="og:site_name" content="Schnupperkurs.de">
+<meta property="og:description" content="Finde die besten Kurse für dich und deine Liebsten und frage kostenlos einen Termin zum Schnuppern an.">
+
+  <link href="/css/fontawesome.min.css" type="text/css" rel="stylesheet">
+<link href="/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="/css/style.css" type="text/css" rel="stylesheet">
+  <script src="/js/jquery.min.js" type="text/javascript"></script>
+  <script src="/js/popper.min.js" type="text/javascript"></script>
+  <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+
+  <!-- Files to edit by external developer-->
+<link href="/css/custom.css" type="text/css" rel="stylesheet">
+<!-- Custom date-picker -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.3/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.3/dist/flatpickr.min.js"></script>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+  <body class="backend backend-dashboard">
+    <!-- Start Header -->
+  <header id="header">
+    <div class="container container_full">
+      <nav class="navbar navbar-expand-lg">
+          <a id="logo" href="/"><img src='/img/logo.svg'></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fal fa-bars"></i></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Suche" aria-label="Search">
+            <button class="btn btn-transparent my-sm-0" type="submit"><i class="fal fa-search"></i></button>
+          </form>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kurse finden</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gutscheine</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Für Gruppen</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Mein Konto</a>
+            </li>
+          </ul>
+          </div>
+      </nav>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- Start Content -->
+  <div id="content">
+    <div class="container container_full">
+      <div class="content-header d-flex align-items-center mb-2">
+        <h1>Abrechnung</h1>
+        <span class="info"><span class="signature">Hilfe</span></span>
+      </div>
+      <!-- Grid container -->
+      <div class="Abrechnung flex-wrap">
+        <div class="row">
+          <!-- col #1 -->
+        <div class="col-12 col-md-6 col-xl-4 mt-md-4">
+          <div class="inline-grid target-destination">
+            <!-- Grid Box -->
+            <div class="grid-box body">
+              <h4>Guthaben</h4>
+              <span class="price mb-2">+ 85,00 €</span>
+              <span class="text">
+                Der nächste Abrechnungslauf folgt am 01.07.2020. Bestehendes Guthaben wird zuvor mit fälligen Beträgen verrechnet.
+              </span>
+            </div>
+            <!-- Grid Box -->
+            <div class="grid-box body">
+              <h4>Rechnungen</h4>
+              <span class="text mb-3">
+                Wähle eine Rechnung aus, um sie herunterzuladen.
+              </span>
+              <div class="input-group">
+                <select name="Auswählen" class="w-100">
+                  <option value="0">Auswählen</option>
+                  <option value="1">option 2</option>
+                  tion 2<option value="2">option 4</option>
+                  <option value="3">option 4</option>
+                </select>
+                <i class="fa fa-chevron-down"></i>
+              </div>
+            </div>
+            <!-- Grid Box -->
+            <div class="grid-box body">
+              <h4>Rechnungsanschrift</h4>
+              <div class="input-group d-flex flex-column">
+                <label>Rechnungsempfänger</label>
+                <input type="text" placeholder="z.B. Sportstudio Hilden GmbH">
+
+                <label>Straße und Hausnummer</label>
+                <input type="text" placeholder="z.B. Speditionstr. 15A">
+
+                <label>Zusatz</label>
+                <input type="text" placeholder="z.B. c/o STARTPLATZ">
+
+                <label>Postleitzahl</label>
+                <input type="number" placeholder="z.B. 40221">
+
+                <label>Ort</label>
+                <input type="text" placeholder="z.B. Düsseldorf">
+              </div>
+            </div>
+            <!-- Grid Box -->
+          </div>
+        </div>
+
+        <!-- col #2 -->
+        <div class="col-12 col-md-6 col-xl-4 mt-0 mt-md-4">
+          <div class="inline-grid">
+            <!-- Grid Box -->
+            <div class="grid-box body">
+              <h4>Bankdaten</h4>
+              <span class="text">Auf dieses Bankkonto werden wir fällige Beträge an dich überweisen und einziehen. </span>
+              <div class="input-group d-flex flex-column">
+                <label>Kontoinhaber</label>
+                <input type="text" placeholder="z.B. Max Mustermann">
+
+                <label>IBAN</label>
+                <input type="text" placeholder="z.B. DE1198765432123456789">
+
+                <label>Zusatz</label>
+                <input type="text" placeholder="z.B. c/o STARTPLATZ">
+
+                <label>BIC</label>
+                <input type="number" placeholder="z.B. WELADED1VEL">
+
+                <label>Name der Bank</label>
+                <input type="text" placeholder="z.B. Sparkasse Hilden Ratingen Velbert">
+              </div>
+            </div>
+            
+            <div class="grid-box body">
+              <h4>Einzugsermächtigung</h4>
+              <div class="input-group">
+                <!-- checkbox -->
+                <div class="box mb-2">
+                  <label class="checkbox">
+                    <input type="checkbox" />
+                    <span>Ich ermächtige die schnupperkurs.media GmbH widerruflich, die von mir zu entrichtenden Zahlungen bei Fälligkeit durch eine der ausgewählten Zahlungsarten von meinem Konto einzuziehen. Im Rahmen des SEPA-Lastschriftmandats ermächtige ich die schnupperkurs.media GmbH, Zahlungen von meinem Konto mittels Lastschrift einzuziehen. Zugleich weise ich mein Kreditinstitut an, die auf mein Konto gezogenen Lastschriften einzulösen.</span>
+                  </label>
+                </div>
+              </div>
+              <div class="info">
+                <span>Gläubiger-ID-Nr.: 123456789</span>
+                <br>
+                <span>Mandatsreferenz: [UserID]</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- col #3 -->
+        <div class="col-12 col-md-6 col-xl-4 mt-1 mt-md-4">
+          <div class="inline-grid base-destination">
+            <div class="grid-box body target">
+              <h4>Information</h4>
+              <span class="text mb-2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </span>
+              <span class="text mb-2">At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </span>
+              <span class="text mb-2">At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</span>
+              <span class="text">At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</span>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <!-- Grid container -->
+    </div>
+    <!-- Fixed Position Bar -->
+    <div class="fixed-bottom">
+      <div class="container container_full">
+        <div class="save-box">
+          <span>Hilfe</span>
+          <button class="btn">Speichern</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Content -->
+
+
+  <!-- Start Footer -->
+  <footer id="footer">
+    <div id="copyright-footer">
+      <div class="container container_full">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <h3>Kontakt</h3>
+            <ul class="nav flex-column">
+              <li><a target="_blank" href="https://wa.me/4921197631125"><i class="fab fa-whatsapp"></i> Schreib uns bei WhatsApp</a></li>
+              <li><a target="_blank" href="https://m.me/schnupperkurs.de"><i class="fab fa-facebook-messenger"></i> Schreib uns bei Facebook</a></li>
+              <li><a target="_blank" href="mailto:hallo@schnupperkurs.de"><i class="fas fa-envelope"></i> hallo@schnupperkurs.de</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h3>Für Anbieter</h3>
+            <ul class="nav flex-column">
+              <li><a href="/fuer-anbieter" target="_blank">Infos</a></li>
+              <li><a href="/registrieren" target="_blank">Registrieren</a></li>
+              <li><a href="/fuer-anbieter#kurse-vermarkten" target="_blank">Kurse bewerben</a></li>
+              <li><a href="/fuer-anbieter#engagement" target="_blank">Engagement</a></li>
+              <li><a href="/fuer-anbieter#agentur" target="_blank">Agentur</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h3>Folge uns</h3>
+            <ul class="nav flex-column">
+              <li><a href="https://www.facebook.com/schnupperkurs.de/" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+              <li><a href="https://www.instagram.com/schnupperkurs.de/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+              <li><a href="https://wa.me/4921197631125" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+              <li><a href="https://www.schnupperkurs.de/blog/" target="_blank"><i class="fal fa-newspaper"></i> Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h3>Rechtliches</h3>
+            <ul class="nav flex-column">
+              <li><a href="/nutzungsbedingungen">Nutzungsbedingungen</a></li>
+              <li><a href="/datenschutz">Datenschutz</a></li>
+              <li><a href="/agb">AGB</a></li>
+              <li><a href="/impressum">Impressum</a></li>				
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="made-with-love">
+      <div class="container container_full">
+        Mit <i class="fas fa-heart"></i> gemacht in Düsseldorf&nbsp;&nbsp;|&nbsp;&nbsp;© 2020 schnupperkurs.media GmbH
+      </div>
+    </div>
+  </footer>
+  <!-- Start Footer -->
+
+    <script src="/js/script.js" type="text/javascript"></script>
+    <script src="/js/custom.js" type="text/javascript"></script>
+</body>
+</html>

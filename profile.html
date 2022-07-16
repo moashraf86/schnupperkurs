@@ -1,0 +1,624 @@
+<html lang="de"><head>
+  <link rel="SHORTCUT ICON" href="images/Favicon.jpg">
+  <meta charset="utf-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Profile</title>
+<meta name="description" content="Finde die besten Kurse für dich und deine Liebsten und frage kostenlos einen Termin zum Schnuppern an.">
+  <meta name="google-site-verification" content="LKsVoZDg9yH9R-RsnQebxuFtA6s-OdNWJPVc4HAGMSg">
+<!-- OG Tags -->
+<meta property="og:type" content="Website">
+<meta property="og:site_name" content="Schnupperkurs.de">
+<meta property="og:description" content="Finde die besten Kurse für dich und deine Liebsten und frage kostenlos einen Termin zum Schnuppern an.">
+
+  <link href="/css/fontawesome.min.css" type="text/css" rel="stylesheet">
+<link href="/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+<link href="/css/style.css" type="text/css" rel="stylesheet">
+  <script src="/js/jquery.min.js" type="text/javascript"></script>
+  <script src="/js/popper.min.js" type="text/javascript"></script>
+  <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+
+  <!-- Files to edit by external developer-->
+<link href="/css/custom.css" type="text/css" rel="stylesheet">
+<!-- Custom date-picker -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@4.6.3/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr@4.6.3/dist/flatpickr.min.js"></script>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+  <body class="backend backend-dashboard">
+    <!-- Start Header -->
+  <header id="header">
+    <div class="container container_full">
+      <nav class="navbar navbar-expand-lg">
+          <a id="logo" href="/"><img src='/img/logo.svg'></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fal fa-bars"></i></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Suche" aria-label="Search">
+            <button class="btn btn-transparent my-sm-0" type="submit"><i class="fal fa-search"></i></button>
+          </form>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kurse finden</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gutscheine</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Für Gruppen</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Mein Konto</a>
+            </li>
+          </ul>
+          </div>
+      </nav>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- Start Content -->
+  <div id="content">
+    <div class="container container_full">
+      <div class="content-header d-flex justify-content-between align-items-center mb-2">
+        <h1>Übersicht</h1>
+      </div>
+      <!-- Grid container -->
+      <div class="profile flex-wrap">
+        <div class="row">
+          <!-- col #1 -->
+        <div class="col-12 col-md-6 col-xl-4 mb-0 mt-md-4">
+          <div class="inline-grid target-destination">
+            <!-- Grid Box -->
+            <div class="grid-box body">
+              <h4>Anbietername</h4>
+              <input class=""" type="text" placeholder="z.B. Sportstudio Hilden">
+              <span class="text">
+                Das ist der Name, mit dem du dich auf unserer Plattform präsentierst.
+              </span>
+            </div>
+            <!-- Grid Box -->
+            <div class="grid-box body">
+              <h4>Kontaktdaten</h4>
+              <span class="text mb-3">
+                Diese Kontaktdaten erhalten die Kunden, wenn sie einen Termin zum Schnuppern angefragt haben oder einen Gutschein bei dir einlösen möchten. (Individualisierbar für jeden Kurs)
+              </span>
+              <div class="input-group">
+                <label>Ansprechpartner/in</label>
+                <input type="text" placeholder="z.B. Lisa Müller">
+
+                <label>Telefonnummer</label>
+                <input type="tel" placeholder="0211 97631125">
+
+                <label>E-Mail-Adresse</label>
+                <input type="email" placeholder="hallo@schnupperkurs.de">
+              </div>
+            </div>
+            <!-- Grid Box -->
+            <div class="grid-box body">
+              <h4>Öffnungszeiten (Standard)</h4>
+              <div class="input-group divider mb-3 pb-2">
+                <!-- checkbox -->
+                <div class="box">
+                  <label class="checkbox">
+                    <input type="checkbox" />
+                    <span>Montag</span>
+                  </label>
+                  <div class="select-box">
+                    <select name="start-time">
+                      <option value="0">9:00</option>
+                      <option value="0">10:00</option>
+                      <option value="0">11:00</option>
+                      <option value="0">12:00</option>
+                    </select>
+                    <span>bis</span>
+                    <select name="end-time">
+                      <option value="0">9:00</option>
+                      <option value="0">10:00</option>
+                      <option value="0">11:00</option>
+                      <option value="0">12:00</option>
+                    </select>
+                    <span>Uhr</span>
+                  </div>
+                </div>
+                <!-- checkbox -->
+                <div class="box">
+                  <label class="checkbox">
+                    <input type="checkbox" />
+                    <span>Dienstag</span>
+                  </label>
+                  <div class="select-box">
+                    <select name="start-time">
+                      <option value="0">9:00</option>
+                      <option value="0">10:00</option>
+                      <option value="0">11:00</option>
+                      <option value="0">12:00</option>
+                    </select>
+                    <span>bis</span>
+                    <select name="end-time">
+                      <option value="0">9:00</option>
+                      <option value="0">10:00</option>
+                      <option value="0">11:00</option>
+                      <option value="0">12:00</option>
+                    </select>
+                    <span>Uhr</span>
+                  </div>
+                </div>
+                <!-- Checkbox -->
+                <div class="box">
+                  <label class="checkbox">
+                    <input type="checkbox" />
+                    <span>Mittwoch</span>
+                  </label>
+                  <div class="select-box">
+                    <select name="start-time">
+                      <option value="0">9:00</option>
+                      <option value="0">10:00</option>
+                      <option value="0">11:00</option>
+                      <option value="0">12:00</option>
+                    </select>
+                    <span>bis</span>
+                    <select name="end-time">
+                      <option value="0">9:00</option>
+                      <option value="0">10:00</option>
+                      <option value="0">11:00</option>
+                      <option value="0">12:00</option>
+                    </select>
+                    <span>Uhr</span>
+                  </div>
+                </div>
+                <div class="box">
+                  <label class="checkbox">
+                    <input type="checkbox" />
+                    <span>Donnerstag</span>
+                  </label>
+                  <div class="select-box">
+                    <select name="start-time">
+                      <option value="0">9:00</option>
+                      <option value="0">10:00</option>
+                      <option value="0">11:00</option>
+                      <option value="0">12:00</option>
+                    </select>
+                    <span>bis</span>
+                    <select name="end-time">
+                      <option value="0">9:00</option>
+                      <option value="0">10:00</option>
+                      <option value="0">11:00</option>
+                      <option value="0">12:00</option>
+                    </select>
+                    <span>Uhr</span>
+                  </div>
+                </div>
+                <div class="box">
+                  <label class="checkbox">
+                    <input type="checkbox" />
+                    <span>Freitag</span>
+                  </label>
+                  <div class="select-box">
+                    <select name="start-time">
+                      <option value="0">9:00</option>
+                      <option value="0">10:00</option>
+                      <option value="0">11:00</option>
+                      <option value="0">12:00</option>
+                    </select>
+                    <span>bis</span>
+                    <select name="end-time">
+                      <option value="0">9:00</option>
+                      <option value="0">10:00</option>
+                      <option value="0">11:00</option>
+                      <option value="0">12:00</option>
+                    </select>
+                    <span>Uhr</span>
+                  </div>
+                </div>
+                <div class="box">
+                  <label class="checkbox">
+                    <input type="checkbox" />
+                    <span>Samstag</span>
+                  </label>
+                  <div class="select-box">
+                    <select name="start-time">
+                      <option value="0">9:00</option>
+                      <option value="0">10:00</option>
+                      <option value="0">11:00</option>
+                      <option value="0">12:00</option>
+                    </select>
+                    <span>bis</span>
+                    <select name="end-time">
+                      <option value="0">9:00</option>
+                      <option value="0">10:00</option>
+                      <option value="0">11:00</option>
+                      <option value="0">12:00</option>
+                    </select>
+                    <span>Uhr</span>
+                  </div>
+                </div>
+                <div class="box">
+                  <label class="checkbox">
+                    <input type="checkbox" />
+                    <span>Sonntag</span>
+                  </label>
+                  <div class="select-box">
+                    <select name="start-time">
+                      <option value="0">9:00</option>
+                      <option value="0">10:00</option>
+                      <option value="0">11:00</option>
+                      <option value="0">12:00</option>
+                    </select>
+                    <span>bis</span>
+                    <select name="end-time">
+                      <option value="0">9:00</option>
+                      <option value="0">10:00</option>
+                      <option value="0">11:00</option>
+                      <option value="0">12:00</option>
+                    </select>
+                    <span>Uhr</span>
+                  </div>
+                </div>
+              </div>
+              <div class="box">
+                <label class="checkbox">
+                  <input type="checkbox" />
+                  <span>Wir haben in den Ferien geöffnet</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- col #2 -->
+        <div class="col-12 col-md-6 col-xl-4 mb-0 mt-0 mt-md-4">
+          <div class="inline-grid target-destination-2">
+            <!-- Grid Box -->
+            <div class="grid-box body">
+              <h4>Anbieterkategorie</h4>
+              <span class="text mb-3">
+                Welche Anbieterkategorie beschreibt dich am besten? Diese Angabe ist vor allem fur die Kurssuche wichting.
+              </span>
+              <div class="input-group">
+                <select name="Auswählen" class="w-100">
+                  <option value="0">Auswählen</option>
+                  <option value="1">option 2</option>
+                  tion 2<option value="2">option 4</option>
+                  <option value="3">option 4</option>
+                </select>
+                <i class="fa fa-chevron-down"></i>
+              </div>
+            </div>
+            <!-- Grid Box -->
+            <div class="grid-box body">
+              <h4>Beschreibung <span class="info">Hilfe</span></h4>
+              <textarea name="textarea" cols="30" rows="10"></textarea>
+              <span class="text">
+                Stell dich in einer ausführlichen Beschreibung als Anbieter vor (mindestens 100 Wörter).
+              </span>
+            </div>
+            <!-- Grid Box -->
+            <div class="grid-box body">
+              <div class="grid_head d-flex justify-content-between align-items-center mb-4">
+                <h4 class="mb-0">Orte und Räume <span class="info">Hilfe</span></h4>
+                <button class="btn add-new">+ Neu</button>
+              </div>
+              <div class="places">
+                <div class="item divider">
+                  <div class="title d-flex align-items-center">
+                    <i class="fa fa-map-marker-alt mr-2"></i>
+                    <p class="name">Schnupperkurs Headquarter</p>
+                  </div>
+                  <!-- Dropdown menu -->
+                  <div class="dropdown">
+                    <div class="hover-dots dropdown-content">
+                      <div class="hover-dot hover-dot-first"></div>
+                      <div class="hover-dot hover-dot-second"></div>
+                      <div class="hover-dot hover-dot-third"></div>
+                    </div>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Link</a>
+                      <a class="dropdown-item" href="#">Link</a>
+                    </div>
+                  </div>
+                  <!-- Dropdown menu -->
+                </div>
+                <div class="item divider">
+                  <div class="title d-flex align-items-center">
+                    <i class="fa fa-map-marker-alt mr-2"></i>
+                    <p class="name">Kursraum Saturn</p>
+                  </div>
+                  <!-- Dropdown menu -->
+                  <div class="dropdown">
+                    <div class="hover-dots dropdown-content">
+                      <div class="hover-dot hover-dot-first"></div>
+                      <div class="hover-dot hover-dot-second"></div>
+                      <div class="hover-dot hover-dot-third"></div>
+                    </div>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Link</a>
+                      <a class="dropdown-item" href="#">Link</a>
+                    </div>
+                  </div>
+                  <!-- Dropdown menu -->
+                </div>
+                <div class="item divider">
+                  <div class="title d-flex align-items-center">
+                    <i class="fa fa-map-marker-alt mr-2"></i>
+                    <p class="name">Kursraum Mars</p>
+                  </div>
+                  <!-- Dropdown menu -->
+                  <div class="dropdown">
+                    <div class="hover-dots dropdown-content">
+                      <div class="hover-dot hover-dot-first"></div>
+                      <div class="hover-dot hover-dot-second"></div>
+                      <div class="hover-dot hover-dot-third"></div>
+                    </div>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Link</a>
+                      <a class="dropdown-item" href="#">Link</a>
+                    </div>
+                  </div>
+                  <!-- Dropdown menu -->
+                </div>
+                <div class="item divider">
+                  <div class="title d-flex align-items-center">
+                    <i class="fa fa-map-marker-alt mr-2"></i>
+                    <p class="name">Kursraum Venus</p>
+                  </div>
+                  <!-- Dropdown menu -->
+                  <div class="dropdown">
+                    <div class="hover-dots dropdown-content">
+                      <div class="hover-dot hover-dot-first"></div>
+                      <div class="hover-dot hover-dot-second"></div>
+                      <div class="hover-dot hover-dot-third"></div>
+                    </div>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Link</a>
+                      <a class="dropdown-item" href="#">Link</a>
+                    </div>
+                  </div>
+                  <!-- Dropdown menu -->
+                </div>
+                <!-- Start Sub Accordion -->
+                <div class="accordion" id="accordionExample">
+                  <div class="card-body p-0 pt-2">
+                    <div class="card-header py-0" id="headingOne">
+                      <div class="d-flex align-items-center justify-content-between card-subtitle py-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <span>+ Ort hinzufügen</span>
+                      </div>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="card-body p-0">
+                        <form class="mb-0 mt-2">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="input-group">
+                                <label class="lighter">Name</label>
+                                <input type="text" name=" Name" class="w-100">
+                              </div>
+                            </div>
+                            <div class="col-12 col-sm-8">
+                              <div class="input-group">
+                                <label class="lighter">Straße</label>
+                                <input type="text" name="Title" class="w-100">
+                              </div>
+                            </div>
+                            <div class="col-12 col-sm-4 pl-sm-0">
+                              <div class="input-group">
+                                <label class="lighter">Hausnummer</label>
+                                <input type="text" name="Title" class="w-100">
+                              </div>
+                            </div>
+                            <div class="col-12 col-sm-4 pr-sm-0">
+                              <div class="input-group">
+                                <label class="lighter">Postleitzahl</label>
+                                <input type="text" name="Beschreibung" class="w-100">
+                              </div>
+                            </div>
+                            <div class="col-12 col-sm-8">
+                              <div class="input-group">
+                                <label class="lighter">Ort</label>
+                                <input type="text" name="Beschreibung" class="w-100 mb-0">
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Sub Accordion -->
+              </div>
+            </div>
+            <!-- Grid Box -->
+            <div class="grid-box body">
+              <h4>Ausstattung)</h4>
+              <div class="input-group">
+                <!-- checkbox -->
+                <div class="box">
+                  <label class="checkbox">
+                    <input type="checkbox" />
+                    <span>Umkleiden</span>
+                  </label>
+                </div>
+                <!-- checkbox -->
+                <div class="box">
+                  <label class="checkbox">
+                    <input type="checkbox" />
+                    <span>Duschen</span>
+                  </label>
+                </div>
+                <!-- Checkbox -->
+                <div class="box">
+                  <label class="checkbox">
+                    <input type="checkbox" />
+                    <span>Wellness</span>
+                  </label>
+                </div>
+                <div class="box">
+                  <label class="checkbox">
+                    <input type="checkbox" />
+                    <span>Parkmöglichkeiten</span>
+                  </label>
+                </div>
+                <div class="box">
+                  <label class="checkbox">
+                    <input type="checkbox" />
+                    <span>Bargeldloses Zahlen</span>
+                  </label>
+                </div>
+                <div class="box">
+                  <label class="checkbox">
+                    <input type="checkbox" />
+                    <span>Shop und Verleih</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- col #3 -->
+        <div class="col-12 col-md-6 col-xl-4 mt-0 mt-xl-4">
+          <div class="inline-grid base-destination">
+            <!-- Grid Box -->
+            <div class="grid-box body target">
+              <h4>Logo und Bilder <span class="info">Hilfe</span></h4>
+              <div class="profile-box">
+                <div class="img">
+                  <img class="w-100 h-100" src="/img/profile 80x80.png" alt="logo">
+                </div>
+                <div class="info">
+                  <h5>Profilfoto (Logo)</h5>
+                  <p class="subtitle">Quadratisch, idealerweise 100 x 100 Pixel (max. 100 KB)</p>
+                  <button class="btn upload">Datei hochladen</button>
+                </div>
+              </div>
+              <div class="profile-info">
+                <span class="text">
+                  Bis zu 10 weitere Bilder (Titelbilder)
+                </span>
+                <br>
+                <span class="sub-text">
+                  Maße im Verhältnis 3:2, Größe max. 1 MB pro Bild
+                </span>
+              </div>
+              <div class="pictures-box mt-3">
+                <button class="btn upload mb-2">Bilder hochladen</button>
+                <div class="slider">
+                  <img class="w-100 h-100" src="/img/silder.png" alt="slider">
+                  <!-- previuos & Next-->
+                  <div class="arrow previous">
+                    <i class="fa fa-chevron-left"></i>
+                  </div>
+                  <div class="arrow next">
+                    <i class="fa fa-chevron-left"></i>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <!-- Grid Box -->
+            <div class="grid-box body target-2">
+              <h4>Zeige dein Gesicht <span class="info">Hilfe</span></h4>
+              <div class="profile-box">
+                <div class="img">
+                  <img class="w-100 h-100" src="/img/profile 80x80.png" alt="logo">
+                </div>
+                <div class="info">
+                  <h5>Foto</h5>
+                  <p class="subtitle">Quadratisch, idealerweise 100 x 100 Pixel (max. 100 KB)</p>
+                  <button class="btn upload">Datei hochladen</button>
+                </div>
+              </div>
+              <div class="input-group mt-4">
+                <label>Name</label>
+                <input type="text" placeholder="">
+                <label>Zitat</label>
+                <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <!-- Grid container -->
+    </div>
+    <!-- Fixed Position Bar -->
+    <div class="fixed-bottom">
+      <div class="container container_full">
+        <div class="save-box">
+          <span>Hilfe</span>
+          <button class="btn">Speichern</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Start Content -->
+
+
+  <!-- Start Footer -->
+  <footer id="footer">
+    <div id="copyright-footer">
+      <div class="container container_full">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <h3>Kontakt</h3>
+            <ul class="nav flex-column">
+              <li><a target="_blank" href="https://wa.me/4921197631125"><i class="fab fa-whatsapp"></i> Schreib uns bei WhatsApp</a></li>
+              <li><a target="_blank" href="https://m.me/schnupperkurs.de"><i class="fab fa-facebook-messenger"></i> Schreib uns bei Facebook</a></li>
+              <li><a target="_blank" href="mailto:hallo@schnupperkurs.de"><i class="fas fa-envelope"></i> hallo@schnupperkurs.de</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h3>Für Anbieter</h3>
+            <ul class="nav flex-column">
+              <li><a href="/fuer-anbieter" target="_blank">Infos</a></li>
+              <li><a href="/registrieren" target="_blank">Registrieren</a></li>
+              <li><a href="/fuer-anbieter#kurse-vermarkten" target="_blank">Kurse bewerben</a></li>
+              <li><a href="/fuer-anbieter#engagement" target="_blank">Engagement</a></li>
+              <li><a href="/fuer-anbieter#agentur" target="_blank">Agentur</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h3>Folge uns</h3>
+            <ul class="nav flex-column">
+              <li><a href="https://www.facebook.com/schnupperkurs.de/" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+              <li><a href="https://www.instagram.com/schnupperkurs.de/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+              <li><a href="https://wa.me/4921197631125" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+              <li><a href="https://www.schnupperkurs.de/blog/" target="_blank"><i class="fal fa-newspaper"></i> Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <h3>Rechtliches</h3>
+            <ul class="nav flex-column">
+              <li><a href="/nutzungsbedingungen">Nutzungsbedingungen</a></li>
+              <li><a href="/datenschutz">Datenschutz</a></li>
+              <li><a href="/agb">AGB</a></li>
+              <li><a href="/impressum">Impressum</a></li>				
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="made-with-love">
+      <div class="container container_full">
+        Mit <i class="fas fa-heart"></i> gemacht in Düsseldorf&nbsp;&nbsp;|&nbsp;&nbsp;© 2020 schnupperkurs.media GmbH
+      </div>
+    </div>
+  </footer>
+  <!-- Start Footer -->
+
+    <script src="/js/script.js" type="text/javascript"></script>
+    <script src="/js/custom.js" type="text/javascript"></script>
+</body>
+</html>
